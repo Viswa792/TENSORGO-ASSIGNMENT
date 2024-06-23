@@ -56,7 +56,7 @@ app.title(" DATA ANALYZER ")
 app.configure(bg="#c5c8e2")
 set_appearance_mode("light")
 set_default_color_theme("green")
-app.iconbitmap("images/ima.jpg")
+app.iconbitmap("ima.jpg")
 
 # Set window size and position
 window_width = 750
@@ -71,7 +71,7 @@ y_position = (screen_height // 2) - (window_height // 2)
 app.geometry(f"{window_width}x{window_height}+{x_position}+{y_position}")
 
 # Load and resize the image
-img = Image.open("images/ima.jpg")
+img = Image.open("ima.jpg")
 img_width = int(433)  # Calculate the width of the image
 img_height = int(474)  # Use the height of the window for the image
 img = img.resize((img_width, img_height), Image.ANTIALIAS)
